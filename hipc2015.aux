@@ -1,0 +1,153 @@
+\relax 
+\citation{fpga1}
+\citation{fpga2}
+\citation{fpga3}
+\citation{web}
+\citation{ah1}
+\citation{ah2}
+\citation{ah3}
+\citation{hw1}
+\citation{fpga1}
+\citation{hw1}
+\citation{hw2}
+\citation{hw8}
+\citation{hw9}
+\citation{fpga1}
+\citation{fpga2}
+\citation{fpga3}
+\citation{hw8}
+\citation{hw9}
+\citation{fpga1}
+\citation{hw1}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Related Work}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Background}{1}}
+\citation{pq0}
+\citation{pq3}
+\citation{pq2}
+\citation{pq4}
+\citation{pq5}
+\citation{hw1}
+\citation{hw2}
+\citation{hw3}
+\citation{hw5}
+\citation{hw6}
+\citation{hw7}
+\citation{hw8}
+\citation{hw9}
+\citation{hw5}
+\citation{hw6}
+\citation{hw8}
+\citation{hw9}
+\citation{hw9}
+\citation{hw8}
+\citation{hw10}
+\citation{hw2}
+\citation{hw1}
+\citation{hw3}
+\citation{hw11}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Binary min heap with its array representation.}}{2}}
+\newlabel{fig2}{{1}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces New heap structure after insertion 18.}}{2}}
+\newlabel{fig3}{{2}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces New heap structure after single deletion operation from the original heap shown at Figure 1\hbox {}.}}{2}}
+\newlabel{fig4}{{3}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Related Work}{2}}
+\citation{fpga3}
+\citation{hw3}
+\citation{fpga2}
+\citation{fpga1}
+\citation{pq6}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Efficient Parallel Heap Implementation}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Storage in FPGA of deferent nodes in binary heap}}{3}}
+\newlabel{fig5}{{4}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Insert Operation}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Insert path}}{3}}
+\newlabel{fig6}{{5}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Contain of latch ($L$) after insertion completed}}{3}}
+\newlabel{fig7}{{6}{3}}
+\citation{pq6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Min-delete Operation}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Hole is the resultant for parallel operation of insert-delete}}{4}}
+\newlabel{fig8}{{7}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Contain of latch ($L$) after parallel operation of insert-delete}}{4}}
+\newlabel{fig9}{{8}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Worst case scenario for $hole$ creation.}}{4}}
+\newlabel{hole}{{10}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Insert-Delete Logic Implementation}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Top Level Architecture of insert-delete}}{5}}
+\newlabel{fig10}{{9}{5}}
+\newlabel{algo1}{{\unhbox \voidb@x \hbox {III-C}}{5}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Algorithm for $Insert-Delete (data, opcode)$}}{5}}
+\newlabel{algo1}{{1}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Pipeline Design Overview}}{5}}
+\newlabel{fig11}{{11}{5}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Algorithm for $findPath$(counter, holeCounter)}}{6}}
+\newlabel{algo2}{{2}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Algorithm for $findNode(counter)$}}{6}}
+\newlabel{algo3}{{3}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Algorithm for $findHole(holeCounter)$}}{6}}
+\newlabel{algo4}{{4}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Algorithm for $indexCal(insert\_path)$}}{6}}
+\newlabel{algo5}{{5}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Optimization Technique}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}1}Hardware Sharing}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Parallel insert operation: illustrates operations at each level at each clock }}{7}}
+\newlabel{clock1}{{12}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Parallel delete operation: illustrates operations at each level at each clock. }}{7}}
+\newlabel{clock2}{{13}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}2}Replacement Technique}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Sharing {\it  Insert-Delete} hardware between two consecutive levels.}}{7}}
+\newlabel{d3}{{14}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Variation of frequency, execution time and throughput with the number of levels.}}{8}}
+\newlabel{table1}{{I}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Evaluation}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Sensitivity Analysis}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Hardware cost results. LUT stands for look-up table.}}{8}}
+\newlabel{table2}{{II}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Response time results.}}{8}}
+\newlabel{table3}{{III}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Hardware Cost and Response Time}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Comparison with Existing Techniques}{8}}
+\citation{hw8}
+\citation{hw11}
+\citation{fpga1}
+\citation{hw2}
+\citation{hw8}
+\citation{hw8}
+\citation{hw11}
+\citation{hw11}
+\citation{fpga1}
+\citation{hw2}
+\citation{pq3}
+\bibcite{pq0}{1}
+\bibcite{pq1}{2}
+\bibcite{pq2}{3}
+\bibcite{pq3}{4}
+\bibcite{pq4}{5}
+\bibcite{pq5}{6}
+\bibcite{pq6}{7}
+\bibcite{hw1}{8}
+\bibcite{hw2}{9}
+\bibcite{hw3}{10}
+\bibcite{hw5}{11}
+\bibcite{hw6}{12}
+\bibcite{hw7}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Execution time for different sequence of operations.}}{9}}
+\newlabel{random}{{15}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusions}{9}}
+\@writefile{toc}{\contentsline {section}{References}{9}}
+\bibcite{hw8}{14}
+\bibcite{hw9}{15}
+\bibcite{hw10}{16}
+\bibcite{hw11}{17}
+\bibcite{fpga1}{18}
+\bibcite{fpga2}{19}
+\bibcite{fpga3}{20}
+\bibcite{ah1}{21}
+\bibcite{ah2}{22}
+\bibcite{ah3}{23}
+\bibcite{Moh}{24}
+\bibcite{web}{25}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Hardware cost and performance comparison with previous works. $n$ denotes the number of nodes.}}{10}}
+\newlabel{table4}{{IV}{10}}
