@@ -48,9 +48,9 @@
 \citation{hw11}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Binary min heap with its array representation.}}{2}}
 \newlabel{fig2}{{1}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces New heap structure after insertion 18.}}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces New heap structure after inserting $18$.}}{2}}
 \newlabel{fig3}{{2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces New heap structure after single deletion operation from the original heap shown at Figure 1\hbox {}.}}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces New heap structure after a delete operation from the original heap shown at Figure 1\hbox {}.}}{2}}
 \newlabel{fig4}{{3}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Related Work}{2}}
 \citation{fpga3}
@@ -61,22 +61,22 @@
 \@writefile{toc}{\contentsline {section}{\numberline {III}Efficient Parallel Heap Implementation}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Storage in FPGA of deferent nodes in binary heap}}{3}}
 \newlabel{fig5}{{4}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Insert Operation}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Insert path}}{3}}
 \newlabel{fig6}{{5}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Contain of latch ($L$) after insertion completed}}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Container of latches $L$ after insertion completes.}}{3}}
 \newlabel{fig7}{{6}{3}}
-\citation{pq6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Insert Operation}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Min-delete Operation}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Hole is the resultant for parallel operation of insert-delete}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A hole results from parallel operation of insert-delete}}{4}}
 \newlabel{fig8}{{7}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Contain of latch ($L$) after parallel operation of insert-delete}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Container of latches ($L$) after parallel operation of insert-delete}}{4}}
 \newlabel{fig9}{{8}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Worst case scenario for $hole$ creation.}}{4}}
 \newlabel{hole}{{10}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Insert-Delete Logic Implementation}{4}}
+\citation{pq6}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Top Level Architecture of insert-delete}}{5}}
 \newlabel{fig10}{{9}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Insert-Delete Logic Implementation}{5}}
 \newlabel{algo1}{{\unhbox \voidb@x \hbox {III-C}}{5}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Algorithm for $Insert-Delete (data, opcode)$}}{5}}
 \newlabel{algo1}{{1}{5}}
@@ -88,18 +88,19 @@
 \newlabel{algo3}{{3}{6}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Algorithm for $findHole(holeCounter)$}}{6}}
 \newlabel{algo4}{{4}{6}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Algorithm for $indexCal(insert\_path)$}}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Algorithm for $indexCal(insert\_path, level, index)$}}{6}}
 \newlabel{algo5}{{5}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Optimization Technique}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}1}Hardware Sharing}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Pipeline Design}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Optimization Technique}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-E}1}Hardware Sharing}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Parallel insert operation: illustrates operations at each level at each clock }}{7}}
 \newlabel{clock1}{{12}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Parallel delete operation: illustrates operations at each level at each clock. }}{7}}
 \newlabel{clock2}{{13}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}2}Replacement Technique}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-E}2}Replacement Technique}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Sharing {\it  Insert-Delete} hardware between two consecutive levels.}}{7}}
 \newlabel{d3}{{14}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Variation of frequency, execution time and throughput with the number of levels.}}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Variation in frequency, execution time, and throughput with number of levels.}}{8}}
 \newlabel{table1}{{I}{8}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Evaluation}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Sensitivity Analysis}{8}}
@@ -108,7 +109,6 @@
 \@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Response time results.}}{8}}
 \newlabel{table3}{{III}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Hardware Cost and Response Time}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Comparison with Existing Techniques}{8}}
 \citation{hw8}
 \citation{hw11}
 \citation{fpga1}
@@ -131,12 +131,13 @@
 \bibcite{hw2}{9}
 \bibcite{hw3}{10}
 \bibcite{hw5}{11}
-\bibcite{hw6}{12}
-\bibcite{hw7}{13}
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Execution time for different sequence of operations.}}{9}}
 \newlabel{random}{{15}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Comparison with Existing Techniques}{9}}
 \@writefile{toc}{\contentsline {section}{\numberline {V}Conclusions}{9}}
 \@writefile{toc}{\contentsline {section}{References}{9}}
+\bibcite{hw6}{12}
+\bibcite{hw7}{13}
 \bibcite{hw8}{14}
 \bibcite{hw9}{15}
 \bibcite{hw10}{16}
